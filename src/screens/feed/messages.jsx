@@ -17,7 +17,7 @@ const Messages = () => {
                         <div className="container-searchbar flex items-center xxs:w-full">
                             <div className="input relative xxs:mx-auto xxs:w-full">
                                 <AiOutlineSearch className="absolute top-3 left-3" />
-                                <input className=" bg-slate-200 px-8 py-2 pl-10 rounded-md text-sm asd xxs:w-96 xs:py-3 xs:w-full xxs:self-center" type="text" name="name_creator" placeholder="Find a creator" onChange={(e) => setCreatorToSearch(e.target.value)} required />
+                                <input className=" bg-slate-200 px-8 py-2 pl-10 rounded-md text-sm asd xxs:w-96 xs:py-3 xs:w-full xxs:self-center" type="text" name="name_creator" placeholder="Find a creator" required />
                             </div>
                             <button className="p-3 rounded-xl border text-slate-600 bg-slate-200 ml-4 sm:relative sm:top-0 sm:right-0 xxs:absolute xxs:top-5 xxs:right-3"><IoFilterSharp /></button>
                         </div>
