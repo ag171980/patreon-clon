@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gallery {
+
+  width: 100%;
+}
+
+.row-photos {
+  width: 100%;
+  transform: scale(0.98);
+  transition: all 0.2s;
+  transition: 0.5s all;
+}
+
+.row-photos.active {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(0.97);
+}
+
+.row-photos>img {
+  transform: translateX(0%);
+  height: 150px;
+}
+
+.gallery::-webkit-scrollbar,
+.row-photos::-webkit-scrollbar {
+  display: none;
+}
+
+
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes slider {
+  from {
+    -moz-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
