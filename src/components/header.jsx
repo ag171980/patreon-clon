@@ -14,9 +14,11 @@ const Header = () => {
         stateDropdown ? setStateDropdown(false) : setStateDropdown(true)
     }
     return (
-        <header className=' fixed w-full bg-white z-10 flex justify-between items-center p-2 shadow-sm'>
+        <header className=' fixed w-full bg-white z-10 flex justify-between items-center p-4 shadow-sm'>
             <div className="menu-icon flex flex-row px-4">
-                <div className="icon font-bold text-center">BP</div>
+                <div className="icon font-bold text-center">
+                    <Link to='/'>BP</Link>
+                </div>
                 <div className="menu-dropdown flex items-center mx-5">
                     {/*<div className=" transition-all relative item px-3 hover:cursor-pointer">
                         <p onClick={showDropdown}>Para creadores</p>
@@ -34,7 +36,7 @@ const Header = () => {
                 </div>
 
             </div>
-            
+
         </header>
     )
 }

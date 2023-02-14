@@ -32,13 +32,29 @@
 }
 
 
-.modal{
+.modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.cover-show {
+  transition: 0.5s all;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  height: 50px !important;
+  filter: grayscale(50%);
+}
+@layer components{
+  .topic{
+    @apply bg-white text-sm px-4 py-2 border border-gray-300 mx-2 rounded-full hover:cursor-pointer xxs:m-1;
+  }
+  .topics{
+    @apply flex items-center justify-center my-4 xxs:flex-row xxs:flex-wrap;
+  }
+}
 @keyframes slider {
   from {
     -moz-transform: translateX(0%);

@@ -101,21 +101,20 @@ const Home = () => {
                 onLoad={handleLoad}
             >
                 <h1 className=' text-4xl text-center py-10 font-extrabold'>Tecno</h1>
-                <div className="user flex flex-row items-center-icons" styles={{justifyContent: "center"}}>
-                {/* <div className="searchbar relative">
+                <div className="user flex flex-row items-center-icons justify-center">
+                    {/* <div className="searchbar relative">
                     <div className="icon-search absolute top-3.5 left-5 scale-125">
                         <AiOutlineSearch />
                     </div>
                     <input type="text" className="py-3 px-14 pl-12 text-sm rounded-full bg-gray-100 outline-none border-none" name="search" id="search" placeholder='Encuentra a un creador' required />
                 </div> */}
-                <componentSearch />
-                <Link to={'/login'} className="mx-2 ml-4">
-                    <button className="text-sm hover:underline">Iniciar Sesion</button>
-                </Link>
-                <Link to={'/register'} className="transition-all bg-red-500 border-white px-10 py-3 mx-3 rounded-full hover:bg-white hover:border-red-500 hover:border-2 text-white border-2 hover:text-red-500">
-                    <button className="text-sm">Registrate</button>
-                </Link>
-                
+                    <Link to={'/login'} className="mx-2 px-7 py-3">
+                        <button className="text-sm hover:underline">Iniciar Sesion</button>
+                    </Link>
+                    <Link to={'/register'} className="transition-all bg-red-500 border-white px-10 py-3 mx-2 rounded-full hover:bg-white hover:border-red-500 hover:border-2 text-white border-2 hover:text-red-500">
+                        <button className="text-sm">Registrate</button>
+                    </Link>
+
                 </div>
                 {/*<button className='bg-red-500 text-white py-3 px-8 rounded-full text-center'>Empezar</button>*/}
                 <div className="gallery overflow-y-hidden overflow-x-scroll">
