@@ -23,19 +23,26 @@ const Sidebar = () => {
 
     return (
         <>
-            <div className='h-screen relative border-x lg:w-72 lg:py-5 lg:border-x xsm:w-16 xsm:block xss:w-0 xxs:h-0 xxs:hidden'></div>
+            <div className='h-screen relative border-x 
+            xss:w-0 xxs:h-0 xxs:hidden 
+            lg:w-72 lg:py-5 lg:border-x 
+            xsm:w-1/12 xsm:px-4 xsm:bg-blue-500 xsm:h-screen xsm:block'></div>
             {
                 window.innerWidth <= 550 &&
                 <div className="menu-hamburguer xxs:absolute xxs:top-5 xxs:left-3 xxs:p-3" onClick={() => closeMenu()}>
                     <GiHamburgerMenu />
-                </div>}
+                </div>
+            }
             {
                 modalMobile &&
-                <div className='h-screen fixed z-40 bg-white border-x lg:w-60 flex flex-col items-center
+                <div className='h-screen 
+                fixed z-40 bg-white border-x 
+                flex flex-col items-center
             xxs:w-screen
-            xsm:py-5 xsm:w-16 xsm:h-full'>
+            xsm:py-5 xsm:w-16 xsm:h-full lg:w-60'>
+
                     <div className="logo font-bold text-violet-600 
-                lg:px-7 lg:self-start 
+                lg:px-7 lg:self-start
                 xsm:px-0 xsm:self-center 
                 xxs:self-start xxs:px-5 xxs:pt-4">BP</div>
                     {
