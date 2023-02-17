@@ -4,8 +4,8 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    listStyleType:{
-      circle:'circle'
+    listStyleType: {
+      circle: 'circle'
     },
     extend: {},
     screens: {
@@ -19,6 +19,8 @@ module.exports = {
       'mxl': '1165px',
       'xl': '1290px',
       '2xl': '1536px',
+      '3xl': '1650px',
+      '4xl': '1800px',
     }
   },
   plugins: [],

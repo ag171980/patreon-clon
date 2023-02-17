@@ -19,16 +19,23 @@ const Settings = () => {
     }, [tab])
     return (
 
-        <div className="flex w-screen">
+        <div className="flex bg-slate-100">
             <Sidebar />
-            <div className="w-full min-h-screen flex flex-col justify-start items-center xxs:pt-7 pt-10 bg-slate-100 xsm:bg-red-600 xsm:w-11/12">
-                <div className="container-settings xxs:w-full xsm:w-5/6">
-                    <h1 className=" font-bold text-3xl 
-                xxs:text-base xxs:self-center 
-                xsm:text-2xl xsm:self-start
-                
-                xl:text-3xl xl:self-center">Settings</h1>
-                    <div className="tabs flex flex-row xxs:overflow-x-scroll xxs:w-screen xxs:justify-start items-center my-4">
+            <div className="min-h-screen flex flex-col justify-start items-center pt-10  xxs:pt-7 xsm:w-11/12 xsm:px-2">
+                <div className="container-settings xxs:w-screen xsm:w-full  mxl:w-4/5 xl:w-3/5 3xl:w-3/6 4xl:w-5/12">
+                    <h1 className="
+                    font-bold text-3xl 
+                    xxs:text-center xxs:pb-4
+
+                    xxs:text-base xxs:self-center 
+                    xsm:text-2xl xsm:text-start xsm:pl-6
+                    xsm:pb-0 xsm:pt-6
+                    md:pl-8 
+                    tablet:pl-10
+                    lg:text-3xl lg:pb-2
+                    xl:text-3xl xl:self-center
+                    ">Settings</h1>
+                    <div className="tabs flex flex-row xxs:overflow-x-scroll xxs:w-screen xxs:justify-start xsm:w-full items-center xsm:pl-6 md:pl-8 tablet:pl-10">
                         <p className={`p-2 px-0 mx-6 xsm:ml-0 xxs:text-ellipsis xxs:whitespace-pre xxs:mx-4 text-sm hover:cursor-pointer ${(tab === "Basics") ? "text-violet-600 font-semibold border-b-2 border-violet-500" : ""}`} onClick={() => {
                             setActualTab(<Basics />)
                             setTab("Basics")
@@ -41,8 +48,9 @@ const Settings = () => {
                             setActualTab(<EmailNotifications />)
                             setTab("Email Notifications")
                         }}>Email notifications</p>
+
                     </div>
-                    <div className="content-tab xxs:w-screen xsm:w-full">
+                    <div className="content-tab xxs:w-screen xsm:w-full xxs:my-6 xsm:mx-auto">
                         {actualTab}
                     </div>
                 </div>

@@ -23,10 +23,10 @@ const Sidebar = () => {
 
     return (
         <>
-            <div className='h-screen relative border-x 
+            <div className='h-screen relative
             xss:w-0 xxs:h-0 xxs:hidden 
-            lg:w-72 lg:py-5 lg:border-x 
-            xsm:w-1/12 xsm:px-4 xsm:bg-blue-500 xsm:h-screen xsm:block'></div>
+            lg:w-72
+            xsm:w-16 xsm:px-4 xsm:h-screen xsm:flex'></div>
             {
                 window.innerWidth <= 550 &&
                 <div className="menu-hamburguer xxs:absolute xxs:top-5 xxs:left-3 xxs:p-3" onClick={() => closeMenu()}>
