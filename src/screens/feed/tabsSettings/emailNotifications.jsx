@@ -3,17 +3,17 @@ const EmailNotifications = () => {
         <h1 className='text-xl font-semibold py-3'>Announcements and resources</h1>
         <div className="product-updates flex flex-row justify-between my-5">
             <p>Product updates and community announcements</p>
-            <label class="switch">
+            <label className="switch">
                 <input type="checkbox" />
-                <span class="slider round"></span>
+                <span className="slider round"></span>
             </label>
         </div>
         <hr />
         <div className="patron-newsletter flex flex-row justify-between my-5">
             <p>Patron newsletter</p>
-            <label class="switch">
+            <label className="switch">
                 <input type="checkbox" />
-                <span class="slider round"></span>
+                <span className="slider round"></span>
             </label>
         </div>
 

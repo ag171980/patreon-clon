@@ -7,13 +7,13 @@ import { IoSettingsOutline } from 'react-icons/io5'
 import { FaTimes } from 'react-icons/fa'
 import { BiDotsVerticalRounded } from 'react-icons/bi'
 import Profile from '../media/profile.png'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 
 const Sidebar = () => {
     const [stateDropdown, setStateDropdown] = useState(false)
-    const [modalMobile, setModalMobile] = useState(true)
+    const [modalMobile, setModalMobile] = useState(window.innerWidth > 550)
     const showDropdown = () => {
         setStateDropdown(!stateDropdown)
     }
@@ -35,16 +35,9 @@ const Sidebar = () => {
             }
             {
                 modalMobile &&
-                <div className='h-screen 
-                fixed z-40 bg-white border-x 
-                flex flex-col items-center
-            xxs:w-screen
-            xsm:py-5 xsm:w-16 xsm:h-full lg:w-60'>
+                <div className='h-screen fixed z-40 bg-white border-x flex flex-col items-center xxs:w-screen xsm:py-5 xsm:w-16 xsm:h-full lg:w-60'>
 
-                    <div className="logo font-bold text-violet-600 
-                lg:px-7 lg:self-start
-                xsm:px-0 xsm:self-center 
-                xxs:self-start xxs:px-5 xxs:pt-4">BP</div>
+                    <div className="logo font-bold text-violet-600 lg:px-7 lg:self-start xsm:px-0 xsm:self-center xxs:self-start xxs:px-5 xxs:pt-4">BP</div>
                     {
                         window.innerWidth <= 550 &&
                         <div className="closeModal absolute right-4 top-5" onClick={() => closeMenu()}>

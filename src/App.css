@@ -23,7 +23,7 @@
 
 .row-photos>img {
   transform: translateX(0%);
-  height: 150px;
+  
 }
 
 .gallery::-webkit-scrollbar,

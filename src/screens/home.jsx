@@ -126,21 +126,21 @@ const Home = () => {
                         onMouseUp={(e) => handleMouseUp(e)}
                         onMouseMove={(e) => handleMouseMove(e)}
                     >
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
                     </div>
 
                     <div
@@ -150,21 +150,21 @@ const Home = () => {
                         onMouseUp={(e) => handleMouseUp(e)}
                         onMouseMove={(e) => handleMouseMove(e)}
                     >
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
                     </div>
 
                     <div
@@ -174,35 +174,35 @@ const Home = () => {
                         onMouseUp={(e) => handleMouseUp(e)}
                         onMouseMove={(e) => handleMouseMove(e)}
                     >
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
-                        <img className='slide inline-block px-1.5 rounded-lg' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
+                        <img className='slide inline-block px-1.5 rounded-lg xxs:h-24 md:h-36' src={Model} alt="" />
                     </div>
 
                 </div>
 
                 <h2 className='text-4xl text-center py-12 font-extrabold'>Lorem ipsum 250 000 personas.</h2>
 
-                <div className="searchbar flex justify-center">
+                <div className="searchbar flex justify-center xxs:flex-col md:flex-row">
                     <div className="input relative mx-3">
                         <div className="icon-search absolute top-4 left-5">
                             <AiOutlineSearch />
                         </div>
-                        <input type="text" className="  bg-gray-100 py-3 pl-12 outline-none rounded-full w-96" placeholder='Descubre personas' />
+                        <input type="text" className="  bg-gray-100 py-3 pl-12 outline-none rounded-full xxs:w-full md:w-96" placeholder='Descubre personas' />
                     </div>
-                    <button className='bg-red-500 text-white py-3 px-8 rounded-full text-center mx-3'>Buscar</button>
+                    <button className='bg-red-500 text-white py-3 px-8 rounded-full text-center mx-3 xxs:my-2'>Buscar</button>
                 </div>
 
             </div>
