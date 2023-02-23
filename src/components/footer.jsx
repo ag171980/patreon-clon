@@ -1,40 +1,58 @@
 import { Link } from "react-router-dom";
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import "../App.css"
 const Footer = () => {
     const languages = ["English (United States)", "Dansk", "Deutsch", "English (United Kingdom)", "Español (España)", "Español (Latinoamerica)", "Francais", "Italiano", "Nederlands", "Norsk (Bokmal)", "Polski", "Portugues (Brasil)", "Svenska", "Русский", "Українська", "日本語"]
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(false)
+    const [selectedLanguage, setSelectedLanguage] = useState("Español (España)")
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const handleClose = () => setShow(false)
+    const handleShow = () => setShow(true)
 
-
+    const selectLanguage = (pos) => {
+        clearSelectLanguage()
+        setSelectedLanguage(document.querySelectorAll(".lenguage")[pos].children[0].innerHTML)
+        document.querySelectorAll(".lenguage")[pos].classList.add("bg-slate-100")
+    }
+    const clearSelectLanguage = () => {
+        document.querySelectorAll(".lenguage").forEach((lang) => {
+            lang.classList.remove("bg-slate-100")
+        })
+    }
     const showLanguages = () => {
         alert("Abriste el modal de lenguajes")
     }
+
+    const saveLenguage = () => {
+        alert("Lenguaje cambiado y guardado correctamente")
+        handleClose()
+    }
+    useEffect(() => {
+    }, [selectedLanguage])
+
     return (
         <footer className=" bg-black text-white px-36 xxs:px-0">
-            <h2 className=" py-14 px-5 xl:w-4/5 xl:mx-auto 3xl:w-3/5">BP</h2>
+            <h2 className=" py-14 px-5 xxs:font-semibold xxs:py-7 xl:w-4/5 xl:mx-auto 3xl:w-3/5">BP</h2>
 
-            <Modal className="modal bg-white xxs:w-11/12 xxs:z-50 xxs:p-0 xxs:px-4" show={show} onHide={handleClose}>
-                <Modal.Header className="flex flex-row justify-between items-center w-full" closeButton>
-                    <Modal.Title className="xxs:text-xl font-bold">Choose your language</Modal.Title>
+            <Modal className="modal bg-white xxs:w-11/12 xxs:z-50 xxs:p-0 xxs:px-4 xxs:shadow sm:w-2/3 mxl:w-6/12" show={show} onHide={handleClose}>
+                <Modal.Header className="flex flex-row justify-between items-center w-full py-4" closeButton>
+                    <Modal.Title className="xxs:text-xl font-bold w-full">Choose your language</Modal.Title>
                     <Button className="px-2 py-2 text-slate-600" variant="secondary" onClick={handleClose}>
                         X
                     </Button>
                 </Modal.Header>
-                <Modal.Body className="grid grid-cols-3 xxs:grid-cols-1 xxs:overflow-y-scroll xxs:h-72 xxs:shadow-inner xxs:py-4 xxs:px-1 xxs:justify-center xxs:items-center">
-                    {languages.map((lang) => <div className="lenguage border rounded-md p-4 my-1 flex justify-center items-center">
-                        <p className="text-center xxs:text-base">{lang}</p>
+                <Modal.Body className="grid grid-cols-3 xxs:grid-cols-1 xxs:gap-x-4 xxs:gap-y-2 xxs:overflow-y-scroll xxs:h-72 xxs:py-4 xxs:px-1 xxs:justify-center xxs:items-center xsm:grid-cols-2 md:grid-cols-3">
+                    {languages.map((lang, index) => <div key={index} className="lenguage border rounded-md p-4 my-1 flex justify-center items-center md:h-16 xsm:px-2" onClick={() => selectLanguage(index)}>
+                        <p className="text-center xxs:text-base xxs:font-bold">{lang}</p>
                     </div>)}
                 </Modal.Body>
                 <Modal.Footer className="flex flex-row justify-end px-2 py-4">
                     <Button className=" px-4 py-2 text-red-500 bg-slate-100 rounded-full text-sm mx-2" variant="secondary" onClick={handleClose}>
                         Cancel
                     </Button>
-                    <Button className=" px-4 py-2 bg-red-500 text-white rounded-full text-sm" variant="primary" onClick={handleClose}>
+                    <Button className=" px-4 py-2 bg-red-500 text-white rounded-full text-sm" variant="primary" onClick={saveLenguage}>
                         Save & update
                     </Button>
                 </Modal.Footer>
@@ -43,9 +61,9 @@ const Footer = () => {
 
             <div className="footer-container flex justify-between pb-12 xxs:flex-col xxs:justify-center xxs:items-center xsm:items-start lg:flex-row xl:w-4/5 xl:mx-auto 3xl:w-3/5">
                 <div className="footer-left flex flex-col justify-start xxs:w-full xxs:px-5 xsm:w-auto">
-                    <button onClick={handleShow} className="p-3 w-44 rounded border my-1 xxs:w-full">Idioma: Espanol (Latinoamerica)</button>
-                    <button className="p-3 w-44 rounded border my-1 text-start xxs:w-full">🇦🇷 Argentina</button>
-                    <button className="p-3 w-44 rounded border my-1 text-start xxs:w-full">Divisa: USD</button>
+                    <button onClick={handleShow} className="p-3 w-44 rounded border my-1 xxs:w-full xxs:text-start xxs:font-semibold">Idioma: {selectedLanguage}</button>
+                    <button className="p-3 w-44 rounded border my-1 text-start xxs:w-full xxs:font-semibold">🇦🇷 Argentina</button>
+                    <button className="p-3 w-44 rounded border my-1 text-start xxs:w-full xxs:font-semibold">Divisa: USD</button>
                 </div>
                 <div className="footer-right w-full ml-44 xxs:grid xxs:ml-0 xxs:grid-cols-2 xxs:px-5 xxs:pt-7 md:flex md:flex-row lg:pt-0 xl:ml-32">
                     <div className="footer-column w-full my-2">
